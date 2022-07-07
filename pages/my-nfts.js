@@ -19,7 +19,7 @@ export default function MyAssets() {
   }, [])
   async function loadNFTs() {
     const web3Modal = new Web3Modal({
-      network: "hardhat",
+      chainId: 1337,
       cacheProvider: true,
     })
     const connection = await web3Modal.connect()
